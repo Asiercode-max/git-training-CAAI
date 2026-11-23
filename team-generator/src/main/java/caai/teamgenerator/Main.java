@@ -14,9 +14,9 @@ public class Main {
 
         while (opcion != 0) {
 
-            System.out.println("========================");
+            System.out.println("===============================");
             System.out.println("       TEAM GENERATOR");
-            System.out.println("========================");
+            System.out.println("===============================");
             System.out.println("Equipo: Byte Busters");
             System.out.println("1. Ver miembros");
             System.out.println("2. Ver tecnologías");
@@ -59,16 +59,16 @@ public class Main {
 
 
     public static void listarMiembros() {
-        System.out.println("\n-------------------------------------");
+        System.out.println("-------------------------------------");
         System.out.println("       LISTADO MIEMBROS");
-        System.out.println("---------------------------------------");
+        System.out.println("-------------------------------------");
         Arrays.stream(miembros).forEach(System.out::println);
     }
 
     public static void verInformacion() {
-        System.out.println("\n-------------------------------------");
+        System.out.println("-------------------------------------");
         System.out.println("       INFORMACION DEL PROYECTO");
-        System.out.println("---------------------------------------");
+        System.out.println("-------------------------------------");
 
         System.out.println("Nombre: CAAI");
         System.out.println("Proyecto: Team Generator");
