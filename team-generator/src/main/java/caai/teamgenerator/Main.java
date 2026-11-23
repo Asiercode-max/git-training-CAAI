@@ -1,9 +1,11 @@
 
 package caai.teamgenerator;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+    private static String[] miembros = {"Aaron","Asier","Iker","Cesar"};
 
     public static void main(String[] args) {
 
@@ -27,6 +29,7 @@ public class Main {
             switch (opcion) {
                 case 1:
                     System.out.println("Ver miembros");
+                    listarMiembros();
                     break;
 
                 case 2:
@@ -51,10 +54,7 @@ public class Main {
         teclado.close();
     }
 
-    public void listarMiembros() {
-        System.out.println("Aaron");
-        System.out.println("Iker");
-        System.out.println("Asier");
-        System.out.println("Cesar");
+    public static void listarMiembros() {
+        Arrays.stream(miembros).forEach(System.out::println);
     }
 }
