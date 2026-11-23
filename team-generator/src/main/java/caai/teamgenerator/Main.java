@@ -48,7 +48,13 @@ public class Main {
 
             System.out.println();
         }
-
         teclado.close();
+    }
+
+    public void listarMiembros() {
+        System.out.println("Aaron");
+        System.out.println("Iker");
+        System.out.println("Asier");
+        System.out.println("Cesar");
     }
 }
