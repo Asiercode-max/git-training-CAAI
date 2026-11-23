@@ -31,6 +31,7 @@ public class Main {
 
                 case 2:
                     System.out.println("Ver tecnologías");
+                    verTecnologias();
                     break;
 
                 case 3:
