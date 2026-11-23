@@ -17,7 +17,7 @@ public class Main {
             System.out.println("===============================");
             System.out.println("       TEAM GENERATOR");
             System.out.println("===============================");
-            System.out.println("Equipo: Byte Busters");
+            System.out.println("Equipo: CAAI");
             System.out.println("1. Ver miembros");
             System.out.println("2. Ver tecnologías");
             System.out.println("3. Ver información del proyecto");
