@@ -35,6 +35,7 @@ public class Main {
 
                 case 3:
                     System.out.println("Ver información del proyecto");
+                    verInformacion();
                     break;
 
                 case 0:
