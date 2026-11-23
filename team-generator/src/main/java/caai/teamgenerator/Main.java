@@ -51,4 +51,15 @@ public class Main {
 
         teclado.close();
     }
+    public static void verTecnologias() {
+
+        System.out.println("========================");
+        System.out.println("    TECNOLOGIAS");
+        System.out.println("========================");
+
+        System.out.println("Asier: Java, Kotlin, Python, C#, SQL");
+        System.out.println("Aaron: Java, Kotlin, Python, C#, SQL");
+        System.out.println("Cesar: Java, Kotlin, Python, C#, SQL");
+        System.out.println("Iker: Java, Kotlin, Python, C#, SQL");
+}
 }
