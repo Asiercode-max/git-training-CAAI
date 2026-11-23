@@ -70,7 +70,7 @@ public class Main {
         System.out.println("       INFORMACION DEL PROYECTO");
         System.out.println("---------------------------------------");
 
-        System.out.println("Nombre: Byte Busters");
+        System.out.println("Nombre: CAAI");
         System.out.println("Proyecto: Team Generator");
         System.out.println("Objetivo: Crear una aplicacion Java");
         System.out.println("Herramientas: Java, Maven y Git");
