@@ -51,4 +51,20 @@ public class Main {
 
         teclado.close();
     }
+
+    public static void verInformacion() {
+        System.out.println("\n--------------------------------");
+        System.out.println("       INFORMACION DEL PROYECTO");
+        System.out.println("--------------------------------");
+
+        System.out.println("Nombre: Byte Busters");
+        System.out.println("Proyecto: Team Generator");
+        System.out.println("Objetivo: Crear una aplicacion Java");
+        System.out.println("Herramientas: Java, Maven y Git");
+        System.out.println("Repositorio: GitHub");
+
+        System.out.println("--------------------------------");
+        System.out.println("Desarrollado por el equipo CAAI");
+        System.out.println("--------------------------------");
+    }
 }
