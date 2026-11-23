@@ -24,33 +24,34 @@ public class Main {
             System.out.println("0. Salir");
             System.out.print("Elige una opción: ");
 
-            opcion = teclado.nextInt();
+            try {
+                opcion = teclado.nextInt();
+                teclado.nextLine();
+                switch (opcion) {
+                    case 1:
+                        listarMiembros();
+                        break;
 
-            switch (opcion) {
-                case 1:
-                    System.out.println("Ver miembros");
-                    listarMiembros();
-                    break;
+                    case 2:
+                        verTecnologias();
+                        break;
 
-                case 2:
-                    System.out.println("Ver tecnologías");
-                    verTecnologias();
-                    break;
+                    case 3:
+                        verInformacion();
+                        break;
 
-                case 3:
-                    System.out.println("Ver información del proyecto");
-                    verInformacion();
-                    break;
+                    case 0:
+                        break;
 
-                case 0:
-                    System.out.println("¡Hasta pronto!");
-                    break;
+                    default:
+                        System.out.println("Opcion no valida. Elige entre 0 y 3.");
+                        break;
+                }
 
-                default:
-                    System.out.println("Opción no válida.");
-                    break;
+            } catch (Exception e) {
+                System.out.println("Elige opcion valida");
+                teclado.nextLine();
             }
-
             System.out.println();
         }
         teclado.close();
@@ -58,13 +59,16 @@ public class Main {
 
 
     public static void listarMiembros() {
+        System.out.println("\n-------------------------------------");
+        System.out.println("       LISTADO MIEMBROS");
+        System.out.println("---------------------------------------");
         Arrays.stream(miembros).forEach(System.out::println);
     }
 
     public static void verInformacion() {
-        System.out.println("\n--------------------------------");
+        System.out.println("\n-------------------------------------");
         System.out.println("       INFORMACION DEL PROYECTO");
-        System.out.println("--------------------------------");
+        System.out.println("---------------------------------------");
 
         System.out.println("Nombre: Byte Busters");
         System.out.println("Proyecto: Team Generator");
@@ -78,9 +82,9 @@ public class Main {
     }
     public static void verTecnologias() {
 
-        System.out.println("========================");
+        System.out.println("-----------------------");
         System.out.println("    TECNOLOGIAS");
-        System.out.println("========================");
+        System.out.println("-----------------------");
 
         System.out.println("Asier: Java, Kotlin, Python, C#, SQL");
         System.out.println("Aaron: Java, Kotlin, Python, C#, SQL");
